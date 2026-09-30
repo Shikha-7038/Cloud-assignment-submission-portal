@@ -42,7 +42,7 @@ async function request(path, { method = "GET", body, isForm = false } = {}) {
   if (token) headers["Authorization"] = `Bearer ${token}`;
   if (body && !isForm) headers["Content-Type"] = "application/json";
 
-  const res = await fetch(`/api${path}`, {
+  const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api${path}`, {
     method,
     headers,
     body: isForm ? body : body ? JSON.stringify(body) : undefined,
