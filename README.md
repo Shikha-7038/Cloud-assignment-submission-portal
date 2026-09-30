@@ -24,6 +24,9 @@ tracking deadlines and feedback across a class does not scale past a
 handful of students. This project replaces that with one authenticated,
 centrally stored system both sides can trust.
 
+## Live demo:
+ https://cloud-assignment-submission-portal-red.vercel.app
+
 ## Objectives
 
 - Give students one place to submit, track, and get feedback on assignments.
